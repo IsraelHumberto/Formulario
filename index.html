@@ -7,6 +7,99 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <header class="head">
+        <h1 class="title">Pesquisa de satisfação</h1>
+        <p class="description">Obrigado pelo feedback. Isso ajuda a melhorar nossa plataforma </p>
+    </header>
+
+    <div class="box-form">
+        <form action="get" class="survey-form">
+            <fieldset>
+                <label>Nome</label>
+                <input type="text" class="name" placeholder="Nome" required>
+            </fieldset>
+            <fieldset>
+                <label>Email</label>
+                <input type="text" class="email" placeholder="Email" required>
+            </fieldset>
+            <fieldset>
+                <label>Idade</label>
+                <input type="number" class="idade" placeholder="Idade" required>
+            </fieldset>
+            <fieldset>
+                <label>Grau de escolaridade</label>
+                <select required>
+                    <option value="" >Selecione</option>
+                    <option value="fundamental-incompleto">Ensino Fundamental Incompleto</option>
+                    <option value="fundamental-completo">Ensino Fundamental Completo</option>
+                    <option value="medio-incompleto">Ensino Médio Incompleto</option>
+                    <option value="medio-completo">Ensino Médio Completo</option>
+                    <option value="superior-incompleto">Ensino Superior Cursando</option>
+                    <option value="superior-completo">Ensino Superior Completo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Você recomendaria nosso curso para seus amigos?</label>
+                <div>
+                    <input type="radio" name="claro" id="claro" checked>
+                    <label>Claro</label>
+                </div>
+                <div>
+                    <input type="radio" name="talvez" id="talvez">
+                    <label>Talvez</label>
+                </div>
+                <div>
+                    <input type="radio" name="dificilmente" id="dificilmente">
+                    <label>Dificilmente</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>O que você mais curte na plataforma?</label>
+                <select required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="desafios">Desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="profesores">Professores</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>O que você incrementaria na plataforma?</label>
+                <div>
+                    <input type="checkbox" name="front" id="front">
+                    <label>Projetos Front-End</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="back" id="back">
+                    <label>Projetos Back-End</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="desafios" id="desafios">
+                    <label>Desafios</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="saladeajuda" id="saladeajuda">
+                    <label>Sala de ajuda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="videos" id="videos">
+                    <label>Videos</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="forum" id="forum">
+                    <label>Fórum</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="cursos" id="cursos">
+                    <label>Cursos Adicionais</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Sugestões e comentários</label>
+                <textarea placeholder="Nos ajude a melhorar" rows="5"></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
