@@ -5,13 +5,24 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #001524;
+}
+
 .box-form {
+    position: relative;
     margin: 20px auto;
-    max-width: 800px;
-    min-width: 300px;
+    max-width: 90vh;
     padding: 40px;
-    background-color: darkcyan;
+    background-color: #15616D;
     border-radius: 5px;
+}
+.head {
+    margin: 20px;
+    color: #FFECD1;
+    font-family: 'Poppins';
+    text-align: center;
+
 }
 
 fieldset {
@@ -25,7 +36,7 @@ fieldset > label {
 label {
     font-family: 'Poppins';
     font-size: 1.2em;
-    color: #fff;
+    color: #FFECD1;
 }
 
 input[type=text], input[type=number], select{
@@ -34,16 +45,16 @@ input[type=text], input[type=number], select{
     border-radius: 5px;
 }
 
-input::placeholder, select{
-    padding-left: 10px;
-    font-size: 1.1em;
-    font-family: 'Nunito';
-    color:rgb(168, 165, 192)
-}
-
 input[type=checkbox], input[type=radio] {
     transform: scale(1.5);
     margin-right: 5px;
+}
+
+input::placeholder, select{
+    padding-left: 10px;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+    color: #689299;
 }
 
 textarea {
@@ -58,5 +69,16 @@ textarea {
 textarea::placeholder {
     font-size: 1.1em;
     font-family: 'Nunito';
-    color
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #FF7D00; 
+    height: 40px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+    color: #FFECD1;
+    cursor: pointer;
+    text-transform: uppercase;
 }
